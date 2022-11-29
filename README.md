@@ -18,8 +18,6 @@ Step 6: Navigate to hello_world_api > api > views.py
 views.py code is as below:
 
 from django.shortcuts import render
-
-# Create your views here.
 from django.http import JsonResponse
 def homePageView(request):
     data = {
