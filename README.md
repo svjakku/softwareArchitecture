@@ -49,3 +49,23 @@ Step 5: Enter username and personal access token
 
 Code is pushed successfully.
 
+
+
+OPTIONAL CODE:
+
+Step1: Create Helloworld.html with below content
+<B>Hello World!</B>
+
+Step 2: Create a folder 'templates' inside api and place above created html file in it
+
+Step 3: Modify view.py as below:
+
+from django.shortcuts import render
+from django.http import JsonResponse
+def homePageView(request):
+   return render(request, 'helloworld.html')
+   
+Step 4: Start the server
+
+Output will look like below:
+Hello World! (in bold)
